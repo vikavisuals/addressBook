@@ -8,11 +8,11 @@ form.addEventListener("submit", function (event) {
     var emailText = this.elements.email.value;
     console.log(personText);
 
+    var addressInfo = `Name: ${personText} <br> Phone: ${phoneText} <br> Email: ${emailText} <br>
+    <button type="button" class="deleteBtn" onclick="addressList.removeChild(this.parentNode)">Delete</button>`;
 
-
-    var addressInfo = `Name: ${personText} <br> Phone: ${phoneText} <br> Email: ${emailText}`;
     var addressList = document.getElementById("addressList");
-    
+
     var addressItem = document.createElement('div');
     
     addressItem.setAttribute('class', 'addressItem');

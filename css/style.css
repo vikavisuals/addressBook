@@ -1,4 +1,13 @@
 .formBox {
     background-color: rgb(97, 97, 182);
+    padding: 20px;
+    font-style: arial;
 }
 
+.addressItem {
+    margin: 20px;
+}
+
+.deleteBtn {
+    background-color: rgb(184, 35, 35);
+}
