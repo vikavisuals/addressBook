@@ -9,17 +9,24 @@ form.addEventListener("submit", function (event) {
     console.log(personText);
 
     var addressInfo = `Name: ${personText} <br> Phone: ${phoneText} <br> Email: ${emailText} <br>
-    <button type="button" class="deleteBtn" onclick="addressList.removeChild(this.parentNode)">Delete</button>`;
+    <button type="button" id="editBtn">Edit</button> <button type="button" id="deleteBtn" onclick="addressList.removeChild(this.parentNode)">Delete</button>`;
 
     var addressList = document.getElementById("addressList");
 
     var addressItem = document.createElement('div');
-    
+
     addressItem.setAttribute('class', 'addressItem');
 
     addressList.appendChild(addressItem);
 
     addressItem.innerHTML = `${addressInfo}`;
+
+
+    var editBtn = document.getElementById("editBtn");
+
+    editBtn.addEventListener("click", function () {
+        addressItem.contentEditable = true;
+    });
 
 });
 

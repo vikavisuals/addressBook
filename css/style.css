@@ -8,6 +8,10 @@
     margin: 20px;
 }
 
-.deleteBtn {
+#deleteBtn {
     background-color: rgb(184, 35, 35);
+}
+
+#editBtn {
+    background-color: aqua;
 }
